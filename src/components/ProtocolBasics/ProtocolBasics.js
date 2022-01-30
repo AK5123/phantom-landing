@@ -4,7 +4,7 @@ import './styles.scss';
 
 const ProtocolBasics = () => {
     return <div className="container">
-        <h3>Protocol Basics</h3>
+        <h3 className="medium-f30">Protocol Basics</h3>
         <div className="cards-container">
             <BasicsCard 
                 title={'BASICS'}

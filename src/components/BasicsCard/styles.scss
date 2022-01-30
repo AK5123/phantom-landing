@@ -1,22 +1,21 @@
 .card-container{
-    background-color: grey;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    border: 2px solid white;
+    border: 1px solid white;
     overflow: hidden;
     position: relative;
-    min-width: 200px;
+    min-width: 250px;
     flex: 1;
 }
 
 .purple-container{
-    background-color: blueviolet;
     padding: 1.5rem;
     border-radius: 0.5rem;
     overflow: hidden;
     position: relative;
     min-width: 200px;
     flex: 1;
+    background-color: #7722FC;
 }
 
 .learn-container {

@@ -6,15 +6,15 @@ const Header = () => {
     return <div className="header-container">
         <Logo />
         <div className="nav-tabs">
-            <h3>Buy</h3>
-            <h3>Bond</h3>
-            <h3>Stake</h3>
-            <h3>Learn</h3>
+            <p className="white">Buy</p>
+            <p className="white">Bond</p>
+            <p className="white">Stake</p>
+            <p className="white">Learn</p>
         </div>
         <div className="enter-app-container">
-            <h3>En</h3>
-            <div className="button-container">
-                <p className="button-text">
+            <p className="white">En</p>
+            <div className="button-container purp-card">
+                <p className="white16">
                     Enter app
                 </p>
             </div>
