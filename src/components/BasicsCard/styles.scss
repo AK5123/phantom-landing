@@ -1,0 +1,39 @@
+.card-container{
+    background-color: grey;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    overflow: hidden;
+    position: relative;
+    min-width: 200px;
+    flex: 1;
+}
+
+.purple-container{
+    background-color: blueviolet;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    min-width: 200px;
+    flex: 1;
+}
+
+.learn-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.waves-container{
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+}
