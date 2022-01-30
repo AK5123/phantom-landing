@@ -12,15 +12,15 @@ const ProtocolBasics = () => {
                 desc={'New PHM is minted through bonding temporarily as the protocol bootstrapsfunds for the treasury.'}
             />
             <BasicsCard 
-                title={'BASICS'}
-                subtitle={'Supply'}
+                title={'GOVERNANCE'}
+                subtitle={'Fully on-chain governed'}
                 isPurple
-                desc={'New PHM is minted through bonding temporarily as the protocol bootstrapsfunds for the treasury.'}
+                desc={'Phantom uses Commonwealth.im toenable on-chain governance to ensureunadulterated community ownership'}
             />
             <BasicsCard 
-                title={'BASICS'}
-                subtitle={'Supply'}
-                desc={'New PHM is minted through bonding temporarily as the protocol bootstrapsfunds for the treasury.'}
+                title={'REWARDS'}
+                subtitle={'Early Holder Rewards'}
+                desc={'sPHM holders are rewarded with compounded returns, increasing their sPHM balance'}
             />
         </div>
     </div>

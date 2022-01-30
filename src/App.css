@@ -108,7 +108,16 @@ p{
   font-size:20px;
   color:white;
 }
+.MuiDrawer-paper{
+  background-color: #0E0D1C !important;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+}
 
+.MuiPaper-root{
+  background-color: rebeccapurple;
+}
 .purp-card{
   background-color:#7722FC;
 }

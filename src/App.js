@@ -8,17 +8,31 @@ import TreasuryMakeup from './components/TreasuryMakeup/TreasuryMakeup';
 import Partner from "./components/Partner/Partner";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
+import { Drawer } from '@material-ui/core';
+import { useState } from 'react';
+import PhantomDrawer from './components/Drawer/Drawer';
 
 function App() {
+  const [showDrawer, setShowDrawer] = useState(false)
   return (
-    <div style={{Pwidth: '100%'}}>
-      <Header />
+    <div>
+      <Header onMenuClick={() => setShowDrawer(true)}/>
       <About />
       <TreasuryMakeup/>
       <ProtocolBasics/>
       <Auction />
       <Partner />
       <Footer />
+      <Drawer
+      anchor={'left'}
+      open={showDrawer}
+      onClose={() => setShowDrawer(false)}
+      PaperProps={{
+        backgroundColor: 'red'
+      }}
+    >
+      <PhantomDrawer/>
+    </Drawer>
     </div>
   );
 }
