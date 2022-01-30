@@ -1,4 +1,8 @@
 import { Box, Grid, useTheme, Zoom, Link, SvgIcon } from "@material-ui/core";
+import { ReactComponent as Olympus } from "../../assets/icons/olympus.svg";
+import { ReactComponent as Frax } from "../../assets/icons/frax.svg";
+import { ReactComponent as Spirit } from "../../assets/icons/spiritswap.svg";
+
 import "./partner.scss";
 const Partner = () => {
   return (
@@ -19,10 +23,39 @@ const Partner = () => {
           <Box
             sx={{
               margin: "2rem 0",
-              display: "flex",
-              justifyContent: "space-around",
+              width: "100%",
             }}
-          ></Box>
+          >
+            <Grid container spacing={3}>
+              <Grid item xs={12} md={4}>
+                <Box
+                  sx={{
+                    width: "100%",
+                  }}
+                >
+                  <Olympus height={70} width={250} />
+                </Box>
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <Box
+                  sx={{
+                    width: "100%",
+                  }}
+                >
+                  <Frax height={104} width={104} />
+                </Box>
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <Box
+                  sx={{
+                    width: "100%",
+                  }}
+                >
+                  <Spirit height={163} width={139} />
+                </Box>
+              </Grid>
+            </Grid>
+          </Box>
         </Box>
       </Zoom>
     </div>

@@ -4,20 +4,20 @@ import { ReactComponent as Medium } from "../../assets/icons/medium.svg";
 import { ReactComponent as Twitter } from "../../assets/icons/twitter.svg";
 import { ReactComponent as Discord } from "../../assets/icons/discord.svg";
 import { ReactComponent as PHMIcon } from "../../assets/icons/phm.svg";
-
+import FooterLogo from "../../assets/icons/phm-footer-logo.png";
 import "./footer.scss";
 
 const Footer = () => {
   return (
-    <div id="footer-view">
+    <div id="footer-view" className="footer">
       <Zoom in={true}>
         <Box
           sx={{
-            width: "80%",
+            width: "90%",
           }}
         >
           <Grid container spacing={4}>
-            <Grid item xs={12} sm={3}>
+            <Grid item xs={12} sm={4}>
               <Box
                 sx={{
                   display: "flex",
@@ -27,12 +27,12 @@ const Footer = () => {
               >
                 <Box
                   sx={{
-                    width: "100%",
                     display: "flex",
                     alignItems: "center",
+                    margin: "28px 0",
                   }}
                 >
-                  <PHMIcon /> <p>Phantom</p>
+                  <img src={FooterLogo} alt="logo"></img>
                 </Box>
                 <Box
                   sx={{
@@ -71,19 +71,19 @@ const Footer = () => {
                     textAlign: "left",
                   }}
                 >
-                  <p>Ⓒ 2021 - Phantom all rights reserved</p>
+                  <p class="white">Ⓒ 2021 - Phantom all rights reserved</p>
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={3}>
+            <Grid item xs={12} sm={2}>
               <Box
                 sx={{
                   display: "flex",
                   flexDirection: "column",
                 }}
               >
-                <Box sx={styles.footerCard}>
-                  <p class="semiBold-f36">Products</p>
+                <Box sx={styles.footerCardHead}>
+                  <h1 class="semiBold-f36">Products</h1>
                 </Box>
                 <Box sx={styles.footerCard}>
                   <p>Bonds</p>
@@ -93,15 +93,15 @@ const Footer = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={3}>
+            <Grid item xs={12} sm={2}>
               <Box
                 sx={{
                   display: "flex",
                   flexDirection: "column",
                 }}
               >
-                <Box sx={styles.footerCard}>
-                  <p>Learn</p>
+                <Box sx={styles.footerCardHead}>
+                  <h1 class="semiBold-f36">Learn</h1>
                 </Box>
                 <Box sx={styles.footerCard}>
                   <p>Documentation</p>
@@ -111,15 +111,15 @@ const Footer = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={3}>
+            <Grid item xs={12} sm={4}>
               <Box
                 sx={{
                   display: "flex",
                   flexDirection: "column",
                 }}
               >
-                <Box sx={styles.footerCard}>
-                  <p>Join the community</p>
+                <Box sx={styles.footerCardHead}>
+                  <h1 class="semiBold-f36">Join the community</h1>
                 </Box>
                 <Box sx={styles.footerCard}>
                   <p>Join Discord</p>
@@ -139,5 +139,10 @@ const styles = {
   footerCard: {
     display: "flex",
     margin: "12px 0",
+  },
+  footerCardHead: {
+    display: "flex",
+    margin: "12px 0",
+    textAlign: "left",
   },
 };
